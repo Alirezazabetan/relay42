@@ -1,0 +1,26 @@
+version: '3.4'
+services:
+  sensordb:
+    image: cassandra
+    ports:
+      - "9042:9042"
+    networks:
+      - iotproducersimulatorapi_kafka-network
+  consumer-api:
+    build:
+        dockerfile: docker/dev.Dockerfile
+        context: .        
+    restart: unless-stopped
+    ports:
+      - "6688:6688"
+    networks:
+      - iotproducersimulatorapi_kafka-network
+    environment:
+      SPRING_PROFILES_ACTIVE: docker    
+      CASSANDRA_DB_HOSTNAME: sensordb
+    depends_on:
+      - sensordb
+    
+networks:
+  iotproducersimulatorapi_kafka-network:
+    external: true    
