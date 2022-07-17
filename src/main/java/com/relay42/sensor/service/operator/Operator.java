@@ -1,7 +1,7 @@
 package com.relay42.sensor.service.operator;
 
-
-import com.relay42.sensor.controller.service.enumeration.Operation;
+import com.relay42.sensor.service.dto.event.Event;
+import com.relay42.sensor.service.enumeration.Operation;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

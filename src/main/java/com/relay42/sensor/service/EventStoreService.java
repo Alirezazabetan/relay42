@@ -2,6 +2,7 @@ package com.relay42.sensor.service;
 
 import com.relay42.sensor.domain.EvenMessage;
 import com.relay42.sensor.repository.EvenMessageRepository;
+import com.relay42.sensor.service.dto.event.Event;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.MessageHeaders;
 import org.springframework.stereotype.Service;

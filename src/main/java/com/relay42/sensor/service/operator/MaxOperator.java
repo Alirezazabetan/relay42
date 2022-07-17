@@ -1,5 +1,6 @@
 package com.relay42.sensor.service.operator;
 
+import com.relay42.sensor.service.dto.event.Event;
 import com.relay42.sensor.service.enumeration.Operation;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

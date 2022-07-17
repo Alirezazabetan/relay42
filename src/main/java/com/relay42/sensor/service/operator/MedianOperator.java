@@ -6,7 +6,6 @@ import com.relay42.sensor.service.math.MonoMedianBigDecimal;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import reactor.math.MonoMedianBigDecimal;
 
 import java.math.BigDecimal;
 

@@ -1,6 +1,9 @@
 package com.relay42.sensor.service;
 
 import com.relay42.sensor.domain.EvenMessage;
+import com.relay42.sensor.service.dto.EventResponse;
+import com.relay42.sensor.service.dto.SensorFilter;
+import com.relay42.sensor.service.dto.SensorResult;
 import com.relay42.sensor.service.mapper.EvenMessageMapper;
 import com.relay42.sensor.service.operator.OperatorServiceFactory;
 import com.relay42.sensor.service.util.StringUtil;

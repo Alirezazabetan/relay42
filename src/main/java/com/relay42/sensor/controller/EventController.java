@@ -1,10 +1,10 @@
 package com.relay42.sensor.controller;
 
 import com.relay42.sensor.controller.errors.BadRequestException;
-import com.relay42.sensor.controller.service.EventQueryService;
-import com.relay42.sensor.controller.service.dto.SensorFilter;
-import com.relay42.sensor.controller.service.dto.SensorResult;
-import com.relay42.sensor.controller.service.enumeration.Operation;
+import com.relay42.sensor.service.EventQueryService;
+import com.relay42.sensor.service.dto.SensorFilter;
+import com.relay42.sensor.service.dto.SensorResult;
+import com.relay42.sensor.service.enumeration.Operation;
 import com.relay42.sensor.service.util.DateUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
