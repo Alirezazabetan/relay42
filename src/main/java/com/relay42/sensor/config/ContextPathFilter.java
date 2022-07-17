@@ -1,6 +1,6 @@
 package com.relay42.sensor.config;
 
-import com.relay.iot.consumer.simulator.app.exception.NotFoundException;
+import com.relay42.sensor.controller.errors.NotFoundException;
 import org.springframework.web.server.ServerWebExchange;
 import org.springframework.web.server.WebFilter;
 import org.springframework.web.server.WebFilterChain;
