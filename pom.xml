@@ -14,6 +14,8 @@
 	<name>sensor</name>
 	<description>Assignment for Relay42</description>
 	<properties>
+		<lombok.version>1.18.20</lombok.version>
+		<lombokmapstruct.version>0.2.0</lombokmapstruct.version>
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
@@ -24,9 +26,33 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-cassandra-reactive</artifactId>
+		</dependency>
+
+		<!-- External dependencies-->
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- Test dependency -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.cassandraunit</groupId>
+			<artifactId>cassandra-unit</artifactId>
+			<version>4.3.1.0</version>
+			<scope>test</scope>
+		</dependency>
+
+
+
 	</dependencies>
 
 	<build>
