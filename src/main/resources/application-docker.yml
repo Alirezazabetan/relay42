@@ -1,0 +1,32 @@
+server:
+  port: 6688
+
+spring:
+  application:
+    name:  sensor
+  webflux:
+    base-path: /sensor
+  data:
+    cassandra:
+      contact-points: ${CASSANDRA_DB_HOSTNAME}
+      port: 9042
+      keyspace-name: test_keyspace
+      schema-act: create_if_not_exists
+
+relay:
+  topic:
+    name: iot-data
+
+kafka:
+  bootstrapAddress: localhost:9092,localhost:9094,localhost:9095
+                    
+logging:
+  level:
+    root: INFO   
+  pattern:
+    console: '%highlight(<<%-5level>>) %d{dd-MM-yy HH:mm:ss.SSS} [%thread] %cyan(%c{0}.%M) - %msg%n'
+
+management:
+  endpoints:
+    web:
+      base-path: /
