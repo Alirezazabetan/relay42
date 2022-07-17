@@ -15,9 +15,9 @@ USER relay
 
 RUN mkdir -p /var/log
 
-COPY --from=builder /usr/consumer-app/dependencies/ ./
-COPY --from=builder /usr/consumer-app/spring-boot-loader/ ./
-COPY --from=builder /usr/consumer-app/snapshot-dependencies/ ./
-COPY --from=builder /usr/consumer-app/application/ ./
+COPY --from=builder /usr/sensor-app/dependencies/ ./
+COPY --from=builder /usr/sensor-app/spring-boot-loader/ ./
+COPY --from=builder /usr/sensor-app/snapshot-dependencies/ ./
+COPY --from=builder /usr/sensor-app/application/ ./
 
 ENTRYPOINT ["java","-noverify", "org.springframework.boot.loader.JarLauncher"]

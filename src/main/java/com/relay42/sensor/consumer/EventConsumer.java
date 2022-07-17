@@ -14,7 +14,6 @@ import java.util.List;
 
 
 @Component
-//@EnableBinding(EventDataInput.class)
 @Slf4j
 public class EventConsumer {
 

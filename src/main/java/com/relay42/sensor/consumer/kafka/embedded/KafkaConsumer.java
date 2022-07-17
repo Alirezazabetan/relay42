@@ -3,6 +3,7 @@ package com.relay42.sensor.consumer.kafka.embedded;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Profile;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
@@ -17,10 +18,9 @@ public class KafkaConsumer {
 
     private String payload;
 
-    @KafkaListener(topics = "iot-data", groupId = "temp")
+    @KafkaListener(topics = "test_topic", groupId = "temp")
     public void receive(ConsumerRecord<?, ?> consumerRecord) {
         LOGGER.info("received payload='{}'", consumerRecord.toString());
-
         payload = consumerRecord.toString();
         latch.countDown();
     }

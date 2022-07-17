@@ -18,7 +18,7 @@ relay:
     name: iot-data
 
 kafka:
-  bootstrapAddress: localhost:9092,localhost:9094,localhost:9095
+  bootstrapAddress: kafka_0:29092,kafka_1:29093,kafka_2:29094
                     
 logging:
   level:

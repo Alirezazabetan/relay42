@@ -69,7 +69,7 @@ public class KafkaConsumerIntegrationTest {
     @Test
     public void givenKafkaDockerContainer_whenSendingWithSimpleProducer_thenMessageReceived() throws Exception {
         String data = "eyJpZCI6MSwidHlwZSI6IlRFTVBFUkFUVVJFIiwibmFtZSI6IkxpdmluZyBSb29tIFRlbXAiLCJjbHVzdGVySWQiOjEsInRpbWVzdGFtcCI6IjIwMjItMDctMTZUMTQ6NDk6MTkuMjY3Njc4WiIsInZhbHVlIjo1MC4wMjAxMTQ2MjY1MzQ1NjQsImluaXRpYWxpemVkIjp0cnVlfQ==";
-        producer.send("iot-data", data);
+        producer.send("test_topic", data);
         EvenMessage evenMessage = new EvenMessage();
         evenMessage.setUid(UUID.randomUUID().toString());
         EvenMessageRepository localMockRepository = Mockito.mock(EvenMessageRepository.class);

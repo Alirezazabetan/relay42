@@ -43,18 +43,4 @@ public class KafkaConsumerConfig {
         return kafkaListenerContainerFactory("temp");
     }
 
-//    public ConsumerFactory<String, Greeting> greetingConsumerFactory() {
-//        Map<String, Object> props = new HashMap<>();
-//        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapAddress);
-//        props.put(ConsumerConfig.GROUP_ID_CONFIG, "greeting");
-//        return new DefaultKafkaConsumerFactory<>(props, new StringDeserializer(), new JsonDeserializer<>(Greeting.class));
-//    }
-//
-//    @Bean
-//    public ConcurrentKafkaListenerContainerFactory<String, Greeting> greetingKafkaListenerContainerFactory() {
-//        ConcurrentKafkaListenerContainerFactory<String, Greeting> factory = new ConcurrentKafkaListenerContainerFactory<>();
-//        factory.setConsumerFactory(greetingConsumerFactory());
-//        return factory;
-//    }
-
 }
