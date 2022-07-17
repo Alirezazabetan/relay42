@@ -14,6 +14,7 @@
 	<name>sensor</name>
 	<description>Assignment for Relay42</description>
 	<properties>
+		<org.mapstruct.version>1.5.2.Final</org.mapstruct.version>
 		<lombok.version>1.18.20</lombok.version>
 		<lombokmapstruct.version>0.2.0</lombokmapstruct.version>
 		<java.version>11</java.version>
@@ -42,6 +43,18 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct</artifactId>
+			<version>${org.mapstruct.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct-processor</artifactId>
+			<version>${org.mapstruct.version}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- Test dependency -->

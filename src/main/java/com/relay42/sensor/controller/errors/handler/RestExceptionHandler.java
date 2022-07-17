@@ -1,6 +1,6 @@
 package com.relay42.sensor.controller.errors.handler;
 
-import com.relay.iot.consumer.simulator.app.controller.errors.BadRequestException;
+import com.relay42.sensor.controller.errors.BadRequestException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
