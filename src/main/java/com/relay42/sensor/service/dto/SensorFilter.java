@@ -1,6 +1,6 @@
-package com.relay42.sensor.controller.service.dto;
+package com.relay42.sensor.service.dto;
 
-import com.relay42.sensor.controller.service.enumeration.Operation;
+import com.relay42.sensor.service.enumeration.Operation;
 import lombok.*;
 
 import java.io.Serializable;

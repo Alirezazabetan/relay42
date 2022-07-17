@@ -1,4 +1,4 @@
-package com.relay42.sensor.controller.service.dto;
+package com.relay42.sensor.service.dto;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

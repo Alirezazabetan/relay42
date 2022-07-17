@@ -1,6 +1,6 @@
-package com.relay42.sensor.controller.service.operator;
+package com.relay42.sensor.service.operator;
 
-import com.relay.iot.consumer.simulator.app.service.enumeration.Operation;
+import com.relay42.sensor.service.enumeration.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

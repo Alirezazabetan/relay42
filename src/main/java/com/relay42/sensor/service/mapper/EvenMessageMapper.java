@@ -1,6 +1,6 @@
-package com.relay42.sensor.controller.service.mapper;
+package com.relay42.sensor.service.mapper;
 
-
+import com.relay42.sensor.controller.service.dto.EventResponse;
 import com.relay42.sensor.domain.EvenMessage;
 import org.mapstruct.Mapper;
 

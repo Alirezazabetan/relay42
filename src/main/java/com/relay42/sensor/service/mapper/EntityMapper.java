@@ -1,4 +1,4 @@
-package com.relay42.sensor.controller.service.mapper;
+package com.relay42.sensor.service.mapper;
 
 import org.mapstruct.BeanMapping;
 import org.mapstruct.MappingTarget;

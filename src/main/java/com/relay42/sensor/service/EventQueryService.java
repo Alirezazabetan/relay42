@@ -1,12 +1,9 @@
-package com.relay42.sensor.controller.service;
+package com.relay42.sensor.service;
 
-import com.relay42.sensor.controller.service.dto.EventResponse;
-import com.relay42.sensor.controller.service.dto.SensorFilter;
-import com.relay42.sensor.controller.service.dto.SensorResult;
-import com.relay42.sensor.controller.service.mapper.EvenMessageMapper;
-import com.relay42.sensor.controller.service.operator.OperatorServiceFactory;
 import com.relay42.sensor.domain.EvenMessage;
-import io.netty.util.internal.StringUtil;
+import com.relay42.sensor.service.mapper.EvenMessageMapper;
+import com.relay42.sensor.service.operator.OperatorServiceFactory;
+import com.relay42.sensor.service.util.StringUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.cassandra.core.ReactiveCassandraTemplate;
 import org.springframework.data.cassandra.core.query.Criteria;

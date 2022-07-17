@@ -1,4 +1,4 @@
-package com.relay42.sensor.controller.service;
+package com.relay42.sensor.service;
 
 import com.relay42.sensor.domain.EvenMessage;
 import com.relay42.sensor.repository.EvenMessageRepository;

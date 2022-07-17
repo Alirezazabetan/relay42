@@ -1,4 +1,4 @@
-package com.relay42.sensor.controller.service.enumeration;
+package com.relay42.sensor.service.enumeration;
 
 import java.util.stream.Stream;
 

@@ -1,6 +1,6 @@
 package com.relay42.sensor.domain;
 
-import com.relay42.sensor.service.dto.event.Event;
+import com.relay42.sensor.controller.service.dto.event.Event;
 import lombok.*;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
